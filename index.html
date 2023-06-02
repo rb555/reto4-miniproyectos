@@ -1,0 +1,43 @@
+<!DOCTYPE html:5>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Calculadora de Ingresos Semanales</title>
+    <script>
+        function calcularIngresos() {
+            // Obtener los valores de los campos de entrada
+            var horasTrabajadas = parseFloat(document.getElementById("horas").value);
+            var tarifaHora = parseFloat(document.getElementById("tarifa").value);
+            
+            // Calcular el ingreso total
+            var ingresoTotal = horasTrabajadas * tarifaHora;
+            
+            // Mostrar el resultado en el elemento con id "resultado"
+            document.getElementById("resultado").innerHTML = "Ingreso total: " + ingresoTotal.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Ingresos Semanales</h1>
+    
+    <label for="horas">Horas trabajadas:</label>
+    <input type="number" id="horas">
+    
+    <br><br>
+    
+    <label for="tarifa">Tarifa por hora:</label>
+    <input type="number" id="tarifa">
+    
+    <br><br>
+    
+    <button onclick="calcularIngresos()">Calcular</button>
+    
+    <br><br>
+    
+    <div id="resultado"></div>
+    
+</body>
+</html>
