@@ -1,0 +1,22 @@
+body {
+    background-image: url('pexels-cottonbro-studio-3171837.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.contador-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    color: #FFD700;
+  }
+  
+  #contador {
+    font-size: 30px;
+    color: #FFD700;
+    margin-top: 20px;
+  }
+  
