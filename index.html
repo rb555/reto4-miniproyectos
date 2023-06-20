@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="style.css">
 <head>
-  <title>Aplicación de dibujo</title>
-  <style>
-    #canvas {
-      border: 2px solid coral;
-    }
-  </style>
+    <title>Paint con JS y Python</title>
 </head>
 <body>
-  <canvas id="canvas" width="800" height="600"></canvas>
-  <script src="app.js"></script>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div id="controls">
+        <label for="color">Color:</label>
+        <input type="color" id="color" value="#000000">
+        <label for="brush-size">Grosor:</label>
+        <input type="range" id="brush-size" min="1" max="20" value="5">
+        <button id="clear-button">Borrar</button>
+        <button id="save-button">Guardar</button>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
